@@ -13,7 +13,7 @@ jobs:
         include:
           - os: windows-latest
           - os: ubuntu-latest
-          - os: macos-13
+          - os: macos-15-intel
           - os: macos-latest
     runs-on: ${{ matrix.os }}
     steps:
@@ -24,7 +24,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y rpm
       - name: Build
         shell: bash
-        run: scripts/build.sh
+        run: bash scripts/build.sh
       - uses: actions/upload-artifact@v4
         with:
           name: dist-${{ matrix.os }}
