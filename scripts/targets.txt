@@ -1,0 +1,9 @@
+# Targets built by `scripts/build.sh --all` / `scripts\build.bat /all`
+# Targets that cannot be built on the current machine are skipped with a message.
+# Install `cargo-zigbuild` + `zig` to cross-compile between operating systems.
+x86_64-pc-windows-msvc
+aarch64-pc-windows-msvc
+x86_64-unknown-linux-musl
+aarch64-unknown-linux-musl
+x86_64-apple-darwin
+aarch64-apple-darwin

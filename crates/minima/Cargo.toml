@@ -1,0 +1,27 @@
+[package]
+name = "minima"
+description = "Minima: a fast, compiled, terminal web browser that strips the modern web down to text"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+build = "build.rs"
+
+[[bin]]
+name = "minima"
+path = "src/main.rs"
+
+[dependencies]
+crossterm = "0.29.0"
+dirs = "7.0.0"
+ego-tree = "0.11.1"
+encoding_rs = "0.8.44"
+image = { version = "0.25.10", default-features = false, features = ["jpeg", "png", "gif", "webp", "bmp"] }
+scraper = "0.29.0"
+serde_json = "1.0.154"
+unicode-width = "0.2.3"
+ureq = { version = "3.5.2", features = ["gzip", "cookies", "rustls"] }
+url = "2.5.8"
+
+[build-dependencies]
+embed-resource = "3.0.12"

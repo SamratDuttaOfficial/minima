@@ -1,0 +1,11 @@
+[package]
+name = "minima-installer"
+description = "Minimal CLI installer stub for Minima"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+build = "build.rs"
+
+[build-dependencies]
+embed-resource = "3.0.12"

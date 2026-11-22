@@ -1,0 +1,81 @@
+# Minima content model — linear (logistic) scorer weights.
+# These are compiled into the binary by build.rs; nothing is read at run time.
+# Format: <feature> <weight>
+#
+# Container model: p(keep) = sigmoid(bias + sum(w_i * x_i)); a block is kept when z >= threshold.
+
+container.bias           0.60
+container.threshold     -0.20
+
+# structural priors (tag / ARIA role)
+tag.main                 3.00
+tag.article              2.50
+tag.section              0.20
+tag.nav                 -3.00
+tag.footer              -2.60
+tag.header              -1.20
+tag.aside               -2.60
+tag.dialog              -3.00
+role.main                3.00
+role.article             2.00
+role.search              1.20
+role.navigation         -3.00
+role.banner             -2.00
+role.complementary      -2.60
+role.contentinfo        -2.60
+role.dialog             -3.00
+role.alertdialog        -3.00
+role.tooltip            -3.00
+
+# class / id token hits (token lists live in lexicon.txt)
+cls.pos                  1.40
+cls.neg                 -2.00
+
+# text statistics
+stat.len_log             0.55
+stat.link_density       -3.20
+stat.sentence_density    1.30
+stat.para_log            0.50
+stat.heading             0.20
+stat.widget_density     -0.50
+stat.empty              -3.00
+stat.depth              -0.02
+
+# form model: z = bias + sum(token weights)  (keep when z >= threshold)
+form.bias                0.40
+form.threshold           0.00
+form.tok_pos             1.60
+form.tok_neg            -2.60
+form.has_text            0.80
+form.many_fields        -0.15
+
+# page kind model: score_k = sum(w * feature)
+kind.article.words_log       0.60
+kind.article.para_log        0.90
+kind.article.link_density   -2.50
+kind.article.has_article     1.50
+kind.article.bias           -3.00
+
+kind.results.link_density    2.00
+kind.results.links_log       0.60
+kind.results.url_search      2.80
+kind.results.has_form        0.40
+kind.results.bias           -3.00
+
+kind.login.password          4.00
+kind.login.url_login         2.50
+kind.login.few_words         0.80
+kind.login.bias             -1.50
+
+kind.form.inputs_log         0.90
+kind.form.few_words          0.60
+kind.form.bias              -2.20
+
+kind.listing.link_density    1.20
+kind.listing.items_log       0.70
+kind.listing.bias           -2.60
+
+kind.home.few_words          0.80
+kind.home.has_form           1.00
+kind.home.url_root           1.80
+kind.home.bias              -1.60

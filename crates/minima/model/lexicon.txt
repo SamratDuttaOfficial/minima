@@ -1,0 +1,51 @@
+# Minima lexicon - compiled into the binary by build.rs.
+# Sections start with [name]; one entry (or comma-separated group) per line.
+
+[stopwords]
+a, an, the, of, to, at, for, and, or, is, are, was, were, be, been, it, its, this, that, these, those
+with, as, by, from, into, about, me, my, i, you, your, we, our, please, can, could, would, should, do, does
+go, show, open, find, get, then, there, here, over, all, any, some
+
+[synonyms]
+login, log in, sign in, signin, logon, sign-in, log-in, account, member
+logout, log out, sign out, signout
+register, sign up, signup, join, create account, subscribe
+search, find, lookup, look up, query, seek, google
+submit, send, go, ok, okay, confirm, apply, continue, next, enter
+cancel, close, dismiss, back, abort
+buy, purchase, order, checkout, cart, basket, bag, pay
+price, cost, pricing, fee, fees, rate, rates
+contact, support, help, reach, email, mail, message
+about, info, information, company, team
+download, save, get file, install
+image, picture, photo, pic, img, thumbnail
+video, clip, movie, film, watch, play, stream
+news, headlines, articles, stories, press
+home, homepage, start, main, index
+settings, preferences, options, config, configuration
+privacy, cookies, cookie, consent, gdpr
+terms, conditions, tos, legal, policy
+menu, navigation, nav, links
+comments, comment, replies, discussion, reply
+share, tweet, post, social
+more, read more, continue reading, details, learn more, see more
+previous, prev, older, earlier
+newer, later, following
+price, usd, dollars, eur, rupees, inr
+
+[class_pos]
+content, article, post, entry, main, body, text, story, prose, markdown, result, results, answer, answers
+description, summary, headline, title, readme, wiki, mw-parser-output, hentry, blog, page, doc, docs, documentation
+
+[class_neg]
+sidebar, comment, comments, ad, ads, advert, advertisement, banner, cookie, cookies, consent, gdpr, share, sharing
+social, menu, popup, pop-up, modal, promo, promoted, related, newsletter, subscribe, footer, header, nav, navbar
+navigation, breadcrumb, breadcrumbs, widget, toolbar, overlay, sponsor, sponsored, outbrain, taboola, skip
+masthead, topbar, sticky, toast, notification, lightbox, drawer, offcanvas, paywall, chatbot, livechat, adsbygoogle
+
+[form_pos]
+search, query, q, find, login, signin, sign-in, username, user, email, password, pass, go, lookup, keyword, keywords
+checkout, address, contact, message, subject, name
+
+[form_neg]
+newsletter, subscribe, subscription, comment, comments, feedback, cookie, consent, survey, promo, coupon, signup-bar
