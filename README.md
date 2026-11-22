@@ -49,6 +49,6 @@ No JavaScript, so pages that only render in the browser come up mostly empty. Vi
 
 ## Docs
 
-[Usage and keys](docs/USAGE.md) · [Building from source](docs/BUILDING.md)
+[Usage and keys](docs/USAGE.md) · [FAQ](docs/FAQ.md) · [Building from source](docs/BUILDING.md)
 
 MIT licensed. Made by [Samrat Dutta](https://github.com/SamratDuttaOfficial).

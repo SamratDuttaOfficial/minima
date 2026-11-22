@@ -22,3 +22,10 @@
 Thumbs.db
 /promo/
 /scratch/
+
+# assistant / agent working files
+AGENTS.md
+agent.md
+agents.md
+.agents/
+.agent/
