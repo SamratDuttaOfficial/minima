@@ -18,7 +18,7 @@ service, no model to download, nothing to set up.
 
 | OS | Get it |
 |---|---|
-| Windows | `minima-…-setup.exe` from [Releases](../../releases/latest) |
+| Windows | `minima-…-setup.exe` from [Releases](../../releases/latest), or `scoop bucket add minima https://github.com/SamratDuttaOfficial/minima` then `scoop install minima` |
 | macOS | `.pkg` or `.dmg` from Releases |
 | Debian / Ubuntu | `sudo apt install ./minima_…deb` |
 | Fedora | `sudo dnf install ./minima-….rpm` |

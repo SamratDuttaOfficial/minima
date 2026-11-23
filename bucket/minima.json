@@ -1,0 +1,26 @@
+{
+    "version": "0.1.0",
+    "description": "A terminal web browser that shows the page and nothing else.",
+    "homepage": "https://samratduttaofficial.github.io/minima/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/SamratDuttaOfficial/minima/releases/download/v0.1.0/minima-0.1.0-windows-x86_64.zip",
+            "hash": "fb550072567be601381664ca4be1c70c892dd5613e5e8ad149c3facd0fd063dc",
+            "extract_dir": "minima-0.1.0-windows-x86_64"
+        }
+    },
+    "bin": "minima.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/SamratDuttaOfficial/minima/releases/download/v$version/minima-$version-windows-x86_64.zip",
+                "extract_dir": "minima-$version-windows-x86_64"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/SamratDuttaOfficial/minima/releases/download/v$version/SHA256SUMS"
+        }
+    }
+}

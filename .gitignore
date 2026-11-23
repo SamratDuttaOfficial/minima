@@ -29,3 +29,11 @@ agent.md
 agents.md
 .agents/
 .agent/
+CLAUDE.md
+GEMINI.md
+.claude/
+.cursor/
+.codex/
+.gemini/
+.windsurf/
+.aider*
